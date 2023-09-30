@@ -1,0 +1,54 @@
+%!PS-Adobe-1.0 
+ 
+matrix currentmatrix /originmat exch def 
+/umatrix {originmat matrix concatmatrix setmatrix} def 
+[28.3465 0 0 28.3465 10.5 100.0] umatrix
+
+0 setgray
+0.4 setlinewidth 
+
+% Krug
+4 5 3 0 360 arc closepath
+gsave
+0 1 1 setrgbcolor fill
+grestore
+stroke
+
+% Kvadrat
+newpath
+ 6 6 moveto
+ 9 6 lineto
+ 9 9 lineto
+ 6 9 lineto
+ 6 6 lineto
+gsave
+1.0 0.7 0.0 setrgbcolor fill
+grestore
+stroke
+
+% Treugolnik
+newpath
+5 10 moveto
+10 12.5 lineto
+5 15 lineto
+closepath
+gsave
+0.0 0.5 0.0 setrgbcolor fill
+grestore
+stroke
+
+% Kursor
+newpath
+ 3 3 moveto
+ 6 3 lineto
+ 0 0 lineto
+ 3 6 lineto
+ 3 3 lineto
+gsave
+0.7 0.3 1.0 setrgbcolor fill
+grestore
+stroke
+
+showpage
+
+

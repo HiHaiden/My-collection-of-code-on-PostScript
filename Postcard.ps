@@ -1,0 +1,42 @@
+%!
+
+0 setgray
+12 setlinewidth 
+
+% Otkritka
+1 0.83 0.83 setrgbcolor
+newpath 0 850 610 -800 rectfill
+0 0 0 setrgbcolor
+newpath 0 850 610 -800 rectstroke
+
+% Text
+/Consolas findfont
+64 scalefont
+setfont
+
+newpath
+1 0.33 1 setrgbcolor
+166 750 moveto
+(Otkritka) show
+stroke
+
+% Cvetok
+0.7 0.3 1.0 setrgbcolor
+306 396 translate 
+.3 dup scale/X
+{5 sqrt 1 add 2 div 74.91 mul}def
+X setlinewidth 
+0 0 1 36 sin sub 
+600 mul 
+74.91 add X 
+2 div sub 
+0 360 arc 
+closepath stroke 
+74.91 setlinewidth 5
+{0 600 36 sin 600 mul 37.455 add -11 247 arc stroke 72 rotate}repeat 
+stroke
+
+
+showpage
+%EOF
+

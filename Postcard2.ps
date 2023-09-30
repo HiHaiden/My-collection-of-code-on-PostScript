@@ -1,0 +1,39 @@
+%!
+
+0 setgray
+10 setlinewidth 
+
+% Otkritka
+0.9 1 1 setrgbcolor
+newpath 0 850 610 -800 rectfill
+0 0 0 setrgbcolor
+newpath 0 850 610 -800 rectstroke
+
+% Text
+/Arial findfont
+66 scalefont
+setfont
+
+newpath
+0.33 0 0.33 setrgbcolor
+170 750 moveto
+(Kartochka) show
+stroke
+
+% Cvetok
+.957 .5 .533 setrgbcolor 
+306 396 translate 
+0 0 108 -270 90 arc 
+-62.353829 0 124.707658 60 -60 arcn
+62.353829 0 124.707658 -120 120 arcn fill
+.937 .4 .5 setrgbcolor 
+209.5077 rotate 5
+{72 rotate gsave 
+-148 0 translate 
+160.611 rotate 
+0 0 150 250 110 arc 
+-51.3030215 0 140.9538931 90 270 arcn 
+closepath fill
+grestore}
+repeat showpage
+%EOF
